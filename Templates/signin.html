@@ -1,0 +1,96 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/fontawesome.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/templatemo-grad-school.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/owl.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/lightbox.css')}}">
+    <header class="main-header clearfix" role="header">
+        <div class="logo">
+          <a href="/"><em>Farm </em>Hire</a>
+        </div>
+    
+        <nav id="menu" class="main-nav" role="navigation">
+          
+          <ul class="main-menu">
+            <li class="active"><a href="#section1">Home</a></li>
+            
+            <li class="has-submenu"><a href="#section2">About Us</a>
+              <ul class="sub-menu">
+                <li><a href="#section2">Who we are?</a></li>
+                <li><a href="#section3">What we do?</a></li>
+                <li><a href="#section3">How it works?</a></li>
+               </ul>
+            </li>
+            <li><a href="#section4">Services</a></li>
+            <!-- <li><a href="#section5">Video</a></li> -->
+            <li><a href="#section6">Contact</a></li>
+          </ul>
+          
+        </nav>
+        
+      </header>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
+
+    <style>
+        .container{
+            border:2px solid blue;
+            text-align:center;
+            margin-top: 44px;
+            height:500px;
+            width:400px;
+        }
+        body{
+            padding:70px;
+        }
+        h1{
+            margin:auto;
+        }
+        .row{
+            height:50px;
+            width:396px;
+            background-color:paleturquoise;
+        }
+    </style>
+
+</head>
+<body>
+   
+<div class="container">
+	<div class="row">
+		 <h1><i class="fa fa-lock" aria-hidden="true"></i> Login</h1>
+       
+        </div><br/>
+         
+                    <form action="/owner" method="post">
+                	<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+								</div>
+								<input type="text" name="email" class="form-control" placeholder="username or email"/>
+							</div><br />
+         
+                	<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fa fa-key icon"></i></span>
+								</div>
+									<input type="Password" name="password" class="form-control" placeholder="password"/>
+							</div><br />
+            <!-- <div class="checkbox">
+              <label><input type="checkbox" value=""/> Remember me</label>
+            </div> -->
+              <button type="submit" class="btn btn-success" ><span class="glyphicon glyphicon-off"></span> Login</button>
+        </form>
+              <br>
+        <br /> <center><div style="border:1px solid black;height:1px;width:300px;"></div></center><br />
+        <div class="footer">
+                  <p>Don't have an Account! <a href="/register">Sign Up Here</a></p>
+         <!--<p>Forgot <a href="#">Password?</a></p> >--> 
+        </div>
+ 
+	</div>
+</body>
+</html>
